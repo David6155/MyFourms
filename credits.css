@@ -1,0 +1,75 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #333e59;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #000000;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.center-image {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ff0000;
+    transition: transform 1s ease, box-shadow 1s ease, max-width 1s ease, max-height 1s ease;
+}
+
+.center-image:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px #ff0000;
+    max-width: 55%;
+    max-height: 55%;
+}
+
+.center-text {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: margin-top 1s ease;
+}
+
+.center-image:hover + .center-text {
+    margin-top: 80px;
+}
+
+
+.admin-button {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    padding: 5px 20px;
+    transition: background-color 0.5s ease;
+}
+
+.admin-button:hover {
+    background-color: #2fa6f0;
+    color: #ffffff;
+}
+
